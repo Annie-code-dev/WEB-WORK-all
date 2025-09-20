@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOPE - Inspiring Hope Through Action</title>
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">HOPE</div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="themeToggle" class="theme-toggle">🌙 Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="animate__animated animate__bounce">HOPING</h1>
+                <p class="hero-text">Believe even when it does not feel right because it might never feel right till its done hence hope and act.</p>
+                <form id="emailForm" class="email-form">
+                    <label for="email">Join our hopeful community:</label>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <p id="errorMessage" class="error-message"></p>
+                </form>
+            </div>
+        </section>
+
+        <section id="about" class="features">
+            <h2>Why Hope Matters</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Strength in Adversity</h3>
+                    <p>Hope gives us the strength to persevere through challenging times.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Future Focus</h3>
+                    <p>It keeps our eyes on the possibilities of tomorrow.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Positive Action</h3>
+                    <p>Hope inspires us to take positive steps toward our goals.</p>
+                </div>
+            </div>
+            
+            <div class="interactive-demo">
+                <h3>Try Our Interactive Elements</h3>
+                <button id="Btn1" class="cta-button">Click Me</button>
+                <p id="message" class="response-message"></p>
+
+                <button class="fancy-btn">Hover Me ✨</button>
+                <div class="box">Animate Me</div>
+
+                <button id="animateBtn" class="cta-button">Click to Animate Box</button>
+                <div id="animatedBox" class="animated-box">JS Animation</div>
+
+                <button id="openModal" class="cta-button">Open Modal</button>
+                
+                <!-- Card flip example -->
+                <h3 style="margin-top: 2rem;">Card Flip Animation</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-face card-front">Click to Flip</div>
+                        <div class="card-face card-back">Hope Inspires!</div>
+                    </div>
+                </div>
+                
+                <!-- Loading animation example -->
+                <h3 style="margin-top: 2rem;">Loading Animation Control</h3>
+                <div class="loader-container">
+                    <div class="loader">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-controls">
+                        <button id="startLoader" class="cta-button">Start Animation</button>
+                        <button id="stopLoader" class="cta-button">Stop Animation</button>
+                    </div>
+                </div>
+                
+                <!-- Modal -->
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span id="closeModal" class="close-modal">&times;</span>
+                        <p>Hello! I slide and fade with JS + CSS 🎬</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="signup-section">
+            <h2>Join Our Community</h2>
+            <form id="signupForm" class="signup-form">
+                <div class="form-group">
+                    <label for="signupName">Name:</label>
+                    <input type="text" id="signupName" placeholder="Enter your name">
+                    <small class="error" id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupEmail">Email:</label>
+                    <input type="email" id="signupEmail" placeholder="Enter your email">
+                    <small class="error" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" placeholder="Enter password">
+                    <small class="error" id="passwordError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm password">
+                    <small class="error" id="confirmPasswordError"></small>
+                </div>
+
+                <button type="submit" class="submit-button">Sign Up</button>
+                <p id="successMsg" class="success-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 HOPE Project. All rights reserved.</p>
+    </footer>
+    <script src="Index.js"></script>
+</body>
+</html> 
